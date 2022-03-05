@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+.todo {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+.inputs > input {
+    height: 40px;
+    margin-top: 10px;
+    background-color: #00008b;
+    color: #fff;
+    outline: none;
+    border: none;
+}
+.inputs > input::placeholder {
+    color: #fff;
+}
+.btn {
+    width: 10%;
+}
+.add__btn {
+    height: 95px;
+    margin-top: 10px;
+    background-color: darkgreen;
+    cursor: pointer;
+    margin-left: 5px;
+    color: #fff;
+    border-radius: 6px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.display__task {
+    display: flex;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.task {
+    background-color: #0000FF;
+    padding: 12px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    color: #fff;
+    width: 70%;
+}
+.days {
+    background-color: #d3d3d3;
+    color: #fff;
+    width: 15%;
+    padding: 12px;
+}
+.display__task > button {
+    background-color: #ff0000;
+    width: 15%;
+    padding: 12px;
+    color: #fff;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width: 800px) {
+    .todo{
+        width: 90%;
+    }
+    .display__task{
+        width: 100%;
+    }
+    .task {
+        width: 70%;
+    }
+    .days{
+        width: 15%;
+    }
+    .display__task > button {
+        width: 15%;
+    }
+    
 }
