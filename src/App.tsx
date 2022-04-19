@@ -33,14 +33,18 @@ const App: FC = () => {
 
   return (
     <div className="App">
+      <div className='title'>
+          Typescript Todo app by Ghani Rehman
+      </div>
       <div className='todo'>
+        
       <div className='inputs'>
       <input type='text' placeholder='Task...' 
       name='task'
       value={task}
       onChange={handleChange}
       />
-      <input type='number' placeholder="Deadline" 
+      <input type='number' placeholder="Deadline (Days)" 
       name='deadline'
       onChange={handleChange}
       />

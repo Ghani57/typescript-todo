@@ -1,8 +1,25 @@
+.App {
+    background-image: url('../Images/bg.jpg');
+    background-size: cover;
+    height: 100vh;
+}
 .todo {
     width: 30%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    height: 200px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.title {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    font-weight: 700;
+    color: #4e4ee9;
+    padding-top: 320px;
 }
 .inputs {
     display: flex;
@@ -16,6 +33,7 @@
     color: #fff;
     outline: none;
     border: none;
+    border-radius: 5px;
 }
 .inputs > input::placeholder {
     color: #fff;
@@ -39,7 +57,6 @@
     width: 30%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
 }
 .task {
     background-color: #0000FF;
@@ -81,5 +98,8 @@
     .display__task > button {
         width: 15%;
     }
-    
+    .title {
+        width: 80%;
+        padding-top: 100px;
+    }
 }
